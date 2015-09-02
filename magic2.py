@@ -9,7 +9,7 @@ import io
 ftp = ftplib.FTP('waws-prod-sn1-001.ftp.azurewebsites.windows.net', 'bv-notifications\$bv-notifications', 'vn5SwvRZuFkQDFRlj5EjalJT42DoYNP2CgeoyGvycDoSrhcY6swsJZDzNicC')
 ftp.cwd("/site/wwwroot")
 
-#sdlfkjsdlfkjsdfl ksdjfls kdjflsd kjflkj
+#sdlfkjsdlfkjsdfl ksdjfls kdjflsd kjflkjlkjlkjlkjljk
 
 timestr = time.strftime("%Y%m%d-%H%M%S")
 writepath = "c:/notifications/"
