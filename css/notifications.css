@@ -1,0 +1,40 @@
+body { font-family: 'Open Sans', sans-serif; }
+
+table { 
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+td { padding : 7px; border-right : 1px solid #000; }
+td.current { background-color : green; }
+
+div#displayActions a { color : #000; font-size : 20px; padding-right : 10px; }
+
+.epic { background-color : #000; color : #fff; margin-top : 30px; font-size : 24px;  }
+.story { border-top : 1px solid #000;  border-bottom : 1px solid #000; font-size : 20px; padding-left : 20px; }
+.task { background-color : #eeebeb; font-size : 16px; padding-left : 40px;  }
+.small { font-size : 4px; }
+
+a { color : #000; }
+
+td.durationCell { text-align : center; } 
+
+
+th.rotate {
+  /* Something you can count on */
+  height: 140px;
+  white-space: nowrap;
+}
+
+th.rotate > div {
+  transform: 
+    /* Magic Numbers */
+    translate(25px, 51px)
+    /* 45 is really 360 - 45 */
+    rotate(315deg);
+  width: 30px;
+}
+th.rotate > div > span {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+}
