@@ -37,7 +37,7 @@ var notifications = {
 	
 	initialize : function() {
 	
-		alert('ok')
+		
 	
 		//start building out your HTML table
 		var htmlString = ""
