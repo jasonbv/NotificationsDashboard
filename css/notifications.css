@@ -17,6 +17,8 @@ div#displayActions a { color : #000; font-size : 20px; padding-right : 10px; }
 
 a { color : #000; }
 
+#currentDate { display : none; }
+
 td.durationCell { text-align : center; } 
 
 

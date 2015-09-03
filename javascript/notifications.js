@@ -43,7 +43,7 @@ var notifications = {
 		var htmlString = ""
 		htmlString += "<table>"
 		htmlString += "<tr>"
-		htmlString += "<th><div><span></span></div></th>"
+		htmlString += "<th>" + $('#currentDate').html() + " </th>"
 		
 		//loop through each status on the jira board and add it as a header to the table
 		$(notifications.statusArray).each(function(statusIndex,status){

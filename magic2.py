@@ -5,6 +5,7 @@ import json
 import time
 import ftplib
 import io
+import datetime
 
 ftp = ftplib.FTP('waws-prod-sn1-001.ftp.azurewebsites.windows.net', 'bv-notifications\$bv-notifications', 'vn5SwvRZuFkQDFRlj5EjalJT42DoYNP2CgeoyGvycDoSrhcY6swsJZDzNicC')
 ftp.cwd("/site/wwwroot")
@@ -19,6 +20,8 @@ parentList = []
 uniqueIssueList = []
 uniqueParentList = []
 
+now = datetime.datetime.now()
+print 
 
 
 #target = open(filename, 'w') ## a will append, w will over-write 
@@ -90,6 +93,7 @@ htmlString +="</script>\n"
 
 htmlString +="\n\n"
 htmlString +="<div id='htmlBlob'></div>\n"
+htmlString += "<span id='currentDate'>" + now.strftime("%A") + ", " + now.strftime("%B") + " "  + now.strftime("%d") + "</span>\n"
 htmlString +="</body>\n"
 htmlString +="</html>"
 
@@ -99,6 +103,5 @@ print filename
 htmlBytes = io.BytesIO(htmlString)
 ftp.storbinary("STOR " + "hostingstart.html", htmlBytes)
 ftp.quit()
-
 
 
